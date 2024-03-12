@@ -1,0 +1,7 @@
+## log file
+
+ftrace_log.c
+
+## execution files
+
+*.exe
