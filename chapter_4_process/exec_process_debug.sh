@@ -25,7 +25,7 @@ echo 1 > /sys/kernel/debug/tracing/events/signal/enable
 sleep 1
 echo "event enabled"
 
-echo sys_clone do_exit search_binary_handler  copy_process.part.5 > /sys/kernel/debug/tracing/set_ftrace_filter
+echo sys_clone do_exit search_binary_handler copy_process* > /sys/kernel/debug/tracing/set_ftrace_filter
 
 sleep 1
 echo "set_ftrace_filter enabled"
