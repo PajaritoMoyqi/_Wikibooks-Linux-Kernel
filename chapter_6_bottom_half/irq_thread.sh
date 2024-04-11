@@ -23,7 +23,7 @@ echo 1 > /sys/kernel/debug/tracing/events/sched/sched_wakeup/enable
 sleep 1
 echo "event enabled"
 
-echo dwc_otg_common_irq > /sys/kernel/debug/tracing/set_ftrace_filter
+echo bcm2835_mmc_thread_irq bcm2835_mmc_irq > /sys/kernel/debug/tracing/set_ftrace_filter
 sleep 1
 echo "set_ftrace_filter enabled"
 
