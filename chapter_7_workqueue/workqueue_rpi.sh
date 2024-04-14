@@ -30,5 +30,8 @@ echo insert_work brcmf_sdio_dataworker > /sys/kernel/debug/tracing/set_ftrace_fi
 sleep 1
 echo "set_ftrace_filter enabled"
 
+echo 1 > /sys/kernel/debug/tracing/options/func_stack_trace
+echo "function stack trace enable"
+
 echo 1 > /sys/kernel/debug/tracing/tracing_on
 echo "tracing_on"
