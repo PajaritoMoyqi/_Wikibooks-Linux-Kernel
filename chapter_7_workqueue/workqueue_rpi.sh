@@ -19,7 +19,7 @@ echo "function tracer enabled"
 echo 1 > /sys/kernel/debug/tracing/events/sched/sched_switch/enable
 echo 1 > /sys/kernel/debug/tracing/events/sched/sched_wakeup/enable
 
-echo 1 > /sys/kernel/debug/tracing/events/workqueue/workqueue_active_work/enable
+echo 1 > /sys/kernel/debug/tracing/events/workqueue/workqueue_activate_work/enable
 echo 1 > /sys/kernel/debug/tracing/events/workqueue/workqueue_queue_work/enable
 echo 1 > /sys/kernel/debug/tracing/events/workqueue/workqueue_execute_start/enable
 echo 1 > /sys/kernel/debug/tracing/events/workqueue/workqueue_execute_end/enable
